@@ -4,11 +4,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require('./config.json');
 
+
 client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login('NzA3NjA4Nzk3NjgxODExNDg3.XrLSDA.UbWptuBhqwCtLCOgkAgvaQ6Ttyo');
+client.login(process.env.TOKENS);    
 
 client.on('messageReactionAdd', async (reaction, user) => {
     if(user.bot) return;
