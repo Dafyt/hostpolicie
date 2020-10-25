@@ -120,7 +120,7 @@ client.on('message', message => {
         message.delete();
     }
     if(message.content == '!close') {
-    if(message.channel.parent === '769918691227074580'){
+    if(message.channel.parentID === '769918691227074580'){
     if(message.member.roles.cache.find(role => role.id === '769857535502581820')){
         message.channel.delete();
     }}}
