@@ -120,9 +120,10 @@ client.on('message', message => {
         message.delete();
     }
     if(message.content == '!close') {
+    if(message.channel.parent === '769918691227074580'){
     if(message.member.roles.cache.find(role => role.id === '769857535502581820')){
         message.channel.delete();
-    }}
+    }}}
     if(jmeno_promene[0] === '!ssluzba'){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#ADFF2F')
