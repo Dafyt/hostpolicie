@@ -115,12 +115,13 @@ client.on('message', message => {
         message.member.roles.remove('751127045005770925')
         message.delete()
     }
+    if(message.channel.id === '769919022724022292'){
     if (message.content == '!ticket') {
         message.guild.createTicket({ owner: message.author })
         message.delete();
-    }
-    if(message.content == '!close') {
+    }}
     if(message.channel.parentID === '769918691227074580'){
+    if(message.content == '!close') {
     if(message.member.roles.cache.find(role => role.id === '769857535502581820')){
         message.channel.delete();
     }}}
