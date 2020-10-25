@@ -147,5 +147,5 @@ client.on('message', message => {
     }
 });
 
-//client.login(process.env.TOKENS);    
-client.login('NzA3NjA4Nzk3NjgxODExNDg3.XrLSDA.S42vs8NmrDGvbTmp4r8dCaHSCBQ');
+client.login(process.env.TOKENS);    
+
