@@ -8,8 +8,7 @@ const config = require('./config.json');
 client.once('ready', () => {
 	console.log('Ready!');
 });
-
-client.login(process.env.TOKENS);    
+   
 
 client.on('messageReactionAdd', async (reaction, user) => {
     if(user.bot) return;
@@ -147,3 +146,5 @@ client.on('message', message => {
         message.delete()
     }
 });
+
+client.login(process.env.TOKENS);    
