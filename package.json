@@ -1,25 +1,15 @@
 {
-
-    "name": "pcr",
-  
-    "description": "Example",
-  
-    "version": "0.0.0",
-  
-    "main": "index.js",
-  
-    "scripts": {
-  
-      "start": "node index.js"
-  
-    },
-  
-    "dependencies": {
-  
-      "discord.js": "12.3.1",
-  
-      "request": "2.88.2"
-  
-    }
-  
+  "name": "osls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "author",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "djs-ticketsystem": "^2.1.0",
   }
+}
