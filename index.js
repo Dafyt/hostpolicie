@@ -97,7 +97,7 @@ client.on('message', message => {
             .setTitle('**POKUTA**')                                         // Nadpis
             .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                          //Co se otevře po kliknutí na nadpis 
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
-            .setDescription(`Pokutu vystavil ${message.member.nickname} a zapsal jí do databáze PČR`)
+            .setDescription(`Pokutu vystavil **${message.member.nickname}** a zapsal jí do databáze PČR`)
             .setThumbnail('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Paper-notes.svg/512px-Paper-notes.svg.png') //Obrázek vlevo
             .addFields(
                 { name: '**OSOBA**', value: jmeno_promene[1], inline: false },
@@ -112,15 +112,16 @@ client.on('message', message => {
     if(jmeno_promene[0] === '!vazbaxxx'){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FF0000')
-            .setTitle('**ODNĚTÍ SVOBODY*')                                         // Nadpis
+            .setTitle('**ODNĚTÍ SVOBODY**')                                         // Nadpis
             .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                          //Co se otevře po kliknutí na nadpis 
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
-            .setDescription(`Policista ${message.member.nickname} udělil odnětí svobody...`)
+            .setDescription(`Policista **${message.member.nickname}** udělil odnětí svobody...`)
             .setThumbnail('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Paper-notes.svg/512px-Paper-notes.svg.png') //Obrázek vlevo
             .addFields(
                 { name: '**OSOBA**', value: jmeno_promene[1], inline: false },
                 { name: '**VÝŠE POKUTY**', value: jmeno_promene[2], inline: false },
                 { name: '**DŮVOD**', value: jmeno_promene[3], inline: false },
+                { name: '**DOBA**', value: jmeno_promene[4], inline: false },
             )          
             .setTimestamp()
             //.setFooter(`Pokutu vystavil ${message.member.nickname} a zapsal jí do databáze PČR`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
@@ -147,7 +148,7 @@ client.on('message', message => {
     }}}
     if(jmeno_promene[0] === '!ssluzba'){
         const exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#ADFF2F')
+            .setColor('#36FF00')
             .setTitle('**Začal službu**')                                         // Nadpis
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
             .setDescription(`Policista **${message.member.nickname}** si potvrdil kartou příchod do práce a vzal si výbavu.`)                //Text embedu
@@ -158,7 +159,7 @@ client.on('message', message => {
     }
     if(jmeno_promene[0] === '!ksluzba'){
         const exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#ADFF2F')
+            .setColor('#FF0000')
             .setTitle('**Ukončil službu**')                                         // Nadpis
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
             .setDescription(`Policista **${message.member.nickname}** si potvrdil kartou odchod z práce a odevzdal výbavu.`)                //Text embedu
