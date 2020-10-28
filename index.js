@@ -75,7 +75,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!omluvenka'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476' || role.id === '769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FFD700')
             .setTitle('**OMLUVENKA**')                                         // Nadpis
@@ -93,9 +93,9 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!pokutaxxx'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476' || role.id === '769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#48CDFF')
+            .setColor('#FFFFFF ')
             .setTitle('**POKUTA**')                                         // Nadpis
             .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                          //Co se otevře po kliknutí na nadpis 
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
@@ -114,7 +114,7 @@ client.on('message', message => {
     if(jmeno_promene[0] === '!vazbaxxx'){
         if(message.member.roles.cache.find(role => role.id === '769871981826408476' || role.id === '769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#3B3B3B')
+            .setColor('#000000')
             .setTitle('**ODNĚTÍ SVOBODY**')                                         // Nadpis
             .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                          //Co se otevře po kliknutí na nadpis 
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
@@ -150,7 +150,7 @@ client.on('message', message => {
         message.channel.delete();
     }}}
     if(jmeno_promene[0] === '!ssluzba'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476' || role.id === '769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#36FF00')
             .setTitle('**Začal službu**')                                         // Nadpis
@@ -162,7 +162,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!ksluzba'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476' || role.id === '769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FF0000')
             .setTitle('**Ukončil službu**')                                         // Nadpis
