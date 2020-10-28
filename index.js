@@ -80,13 +80,14 @@ client.on('message', message => {
             .setTitle('**OMLUVENKA**')                                         // Nadpis
             .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                          //Co se otevře po kliknutí na nadpis 
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
+            .setDescription(`Policista ${message.member.nickname} si žádá o omluvenku z práce:`)
             .setThumbnail('https://cdn.discordapp.com/attachments/729654155798380548/769931760657104896/hodiny.png') //Obrázek vlevo
             .addFields(
                 { name: '**Doba omluvenky/dovolené**', value: jmeno_promene[1], inline: false },
                 { name: '**DŮVOD**', value: jmeno_promene[2], inline: false },
             )          
             .setTimestamp()
-            .setFooter(`Žádost si podal ${message.member.nickname}`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
+            //.setFooter(`Žádost si podal ${message.member.nickname}`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
         message.channel.send(exampleEmbed)
         message.delete()
     }
@@ -103,7 +104,7 @@ client.on('message', message => {
                 { name: '**DŮVOD**', value: jmeno_promene[3], inline: false },
             )          
             .setTimestamp()
-            .setFooter(`Pokutu vystavil ${message.member.nickname}`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
+            .setFooter(`Pokutu vystavil ${message.member.nickname} a zapsal jí do databáze PČR`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
         message.channel.send(exampleEmbed)
         message.delete()
     }
@@ -130,9 +131,9 @@ client.on('message', message => {
             .setColor('#ADFF2F')
             .setTitle('**Začal službu**')                                         // Nadpis
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
-            .setDescription(`Policista **${message.member.nickname}** začal službu`)                //Text embedu
+            .setDescription(`Policista **${message.member.nickname}** si potvrdil kartou příchod do práce a vzal si výbavu.`)                //Text embedu
             .setTimestamp()
-            //.setFooter(`Policista ${message.author.username}`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
+            .setFooter(`Informace se zapsala do soukromé databáze Policie České republiky`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png'           // URL obrázku dole
         message.channel.send(exampleEmbed).then(message.member.roles.add('769911778350989342'))
         message.delete()
     }
@@ -141,9 +142,9 @@ client.on('message', message => {
             .setColor('#ADFF2F')
             .setTitle('**Ukončil službu**')                                         // Nadpis
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
-            .setDescription(`Policista **${message.member.nickname}** ukončil službu`)                //Text embedu
+            .setDescription(`Policista **${message.member.nickname}** si potvrdil kartou odchod z práce a odevzdal výbavu.`)                //Text embedu
             .setTimestamp()
-            //.setFooter(`Policista ${message.author.username}`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
+            .setFooter(`Informace se zapsala do soukromé databáze Policie České republiky`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
         message.channel.send(exampleEmbed).then(message.member.roles.remove('769911778350989342'))
         message.delete()
     }
