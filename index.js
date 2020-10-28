@@ -112,7 +112,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!vazbaxxx'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476' || role.id === '769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#3B3B3B')
             .setTitle('**ODNĚTÍ SVOBODY**')                                         // Nadpis
