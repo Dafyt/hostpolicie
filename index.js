@@ -75,13 +75,13 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!omluvenka'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FFD700')
             .setTitle('**OMLUVENKA**')                                         // Nadpis
             .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                          //Co se otevře po kliknutí na nadpis 
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
-            .setDescription(`Policista ${message.member.nickname} si žádá o omluvenku z práce:`)
+            .setDescription(`Policista **${message.member.nickname}** si žádá o omluvenku z práce:`)
             .setThumbnail('https://cdn.discordapp.com/attachments/729654155798380548/769931760657104896/hodiny.png') //Obrázek vlevo
             .addFields(
                 { name: '**Doba omluvenky/dovolené**', value: jmeno_promene[1], inline: false },
@@ -93,9 +93,9 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!pokutaxxx'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#FF0000')
+            .setColor('#48CDFF')
             .setTitle('**POKUTA**')                                         // Nadpis
             .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                          //Co se otevře po kliknutí na nadpis 
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
@@ -112,9 +112,9 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!vazbaxxx'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
-            .setColor('#FF0000')
+            .setColor('#3B3B3B')
             .setTitle('**ODNĚTÍ SVOBODY**')                                         // Nadpis
             .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ')                          //Co se otevře po kliknutí na nadpis 
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
@@ -150,7 +150,7 @@ client.on('message', message => {
         message.channel.delete();
     }}}
     if(jmeno_promene[0] === '!ssluzba'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#36FF00')
             .setTitle('**Začal službu**')                                         // Nadpis
@@ -162,7 +162,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!ksluzba'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FF0000')
             .setTitle('**Ukončil službu**')                                         // Nadpis
