@@ -75,6 +75,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!omluvenka'){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FFD700')
             .setTitle('**OMLUVENKA**')                                         // Nadpis
@@ -90,8 +91,9 @@ client.on('message', message => {
             //.setFooter(`Žádost si podal ${message.member.nickname}`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
         message.channel.send(exampleEmbed)
         message.delete()
-    }
+    }}
     if(jmeno_promene[0] === '!pokutaxxx'){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FF0000')
             .setTitle('**POKUTA**')                                         // Nadpis
@@ -108,8 +110,9 @@ client.on('message', message => {
             //.setFooter(`Pokutu vystavil ${message.member.nickname} a zapsal jí do databáze PČR`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
         message.channel.send(exampleEmbed)
         message.delete()
-    }
+    }}
     if(jmeno_promene[0] === '!vazbaxxx'){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FF0000')
             .setTitle('**ODNĚTÍ SVOBODY**')                                         // Nadpis
@@ -127,7 +130,7 @@ client.on('message', message => {
             //.setFooter(`Pokutu vystavil ${message.member.nickname} a zapsal jí do databáze PČR`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
         message.channel.send(exampleEmbed)
         message.delete()
-    }
+    }}
     if(jmeno_promene[0] == '!pdxx'){   //Přidá to roli 
         message.member.roles.add('751127045005770925').then(message.react('✅'));
         message.delete()
@@ -147,27 +150,29 @@ client.on('message', message => {
         message.channel.delete();
     }}}
     if(jmeno_promene[0] === '!ssluzba'){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#36FF00')
             .setTitle('**Začal službu**')                                         // Nadpis
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
             .setDescription(`Policista **${message.member.nickname}** si potvrdil kartou příchod do práce a vzal si výbavu.`)                //Text embedu
             .setTimestamp()
-            .setFooter(`Informace se zapsala do soukromé databáze Policie České republiky`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')           // URL obrázku dole
+            .setFooter(`Informace se zapsala do databáze Policie České republiky`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')           // URL obrázku dole
         message.channel.send(exampleEmbed).then(message.member.roles.add('769911778350989342'))
         message.delete()
-    }
+    }}
     if(jmeno_promene[0] === '!ksluzba'){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FF0000')
             .setTitle('**Ukončil službu**')                                         // Nadpis
             .setAuthor('Policie České republiky', 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png')    //Horní část embedu - Kdo to vytvoři, obrázek vpravu, co se otevře po kliknutí
             .setDescription(`Policista **${message.member.nickname}** si potvrdil kartou odchod z práce a odevzdal výbavu.`)                //Text embedu
             .setTimestamp()
-            .setFooter(`Informace se zapsala do soukromé databáze Policie České republiky`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
+            .setFooter(`Informace se zapsala do databáze Policie České republiky`, 'https://media.discordapp.net/attachments/729654155798380548/769906915022471208/pcr.png');           // URL obrázku dole
         message.channel.send(exampleEmbed).then(message.member.roles.remove('769911778350989342'))
         message.delete()
-    }
+    }}
 });
 
 client.login(process.env.TOKENS);    
