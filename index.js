@@ -75,7 +75,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!omluvenka'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FFD700')
             .setTitle('**OMLUVENKA**')                                         // Nadpis
@@ -93,7 +93,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!pokutaxxx'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#48CDFF')
             .setTitle('**POKUTA**')                                         // Nadpis
@@ -112,7 +112,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!vazbaxxx'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#3B3B3B')
             .setTitle('**ODNĚTÍ SVOBODY**')                                         // Nadpis
@@ -150,7 +150,7 @@ client.on('message', message => {
         message.channel.delete();
     }}}
     if(jmeno_promene[0] === '!ssluzba'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#36FF00')
             .setTitle('**Začal službu**')                                         // Nadpis
@@ -162,7 +162,7 @@ client.on('message', message => {
         message.delete()
     }}
     if(jmeno_promene[0] === '!ksluzba'){
-        if(message.member.roles.cache.find(role => role.id === '769871981826408476,769857535502581820')){
+        if(message.member.roles.cache.find(role => role.id === '769871981826408476')){
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#FF0000')
             .setTitle('**Ukončil službu**')                                         // Nadpis
