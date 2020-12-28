@@ -10,7 +10,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login(process.env.BOT_TOKEN);    
+client.login(process.env.BOT_TOKEN);
 
 client.on('messageReactionAdd', async (reaction, user) => {
     if(!reaction.message.author.bot) return;
