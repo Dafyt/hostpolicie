@@ -11,7 +11,6 @@ client.once('ready', () => {
 });
 
 client.login(process.env.BOT_TOKEN);    
-//client.login('NzA3NjA4Nzk3NjgxODExNDg3.XrLSDA.1ho0sa6yudUq2XTrZLEOpxgowc0');
 
 client.on('messageReactionAdd', async (reaction, user) => {
     if(!reaction.message.author.bot) return;
